@@ -10,6 +10,7 @@ namespace MoviePro.Models
     {
         public int Id { get; set; }
 
+        [Display(Name = "Movie")]
         public int MovieId { get; set; }    
         public int CrewId { get; set; }
         public string Department { get; set; }
@@ -19,5 +20,6 @@ namespace MoviePro.Models
         [Display(Name = "Profile Pic")]
         public byte[] Profile { get; set; }
         public string ContentType { get; set; }
+        public Movie Movie { get; set; }
     }
 }

@@ -9,7 +9,8 @@ namespace MoviePro.Models
     public class Cast
     {
         public int Id {get; set;}
-        
+
+        [Display(Name = "Movie")]
         public int MovieId { get; set; }
         
         //TMDB castID used to identify cast across movies
@@ -26,5 +27,9 @@ namespace MoviePro.Models
         [Display(Name="Profile Pic")]
         public byte[] Profile { get; set; }
         public string ContentType { get; set; }
+
+
+        public Movie Movie { get; set; }
+
     }
 }
